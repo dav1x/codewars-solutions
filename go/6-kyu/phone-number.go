@@ -7,14 +7,14 @@ import (
 
 func CreatePhoneNumber(numbers [10]uint) string {
 
-//  if callme, err := json.Marshal(numbers); err != nil {
+    //if callme, err := json.Marshal(numbers); err != nil {
 
-    callme, _ json.Marshall(numbers)
+    callme, _ := json.Marshal(numbers)
     s_callme := strings.ReplaceAll(strings.Trim(string(callme), "[]"), ",", "")
+    return "(" + s_callme[:3] + ") " + s_callme[3:6] + "-" + s_callme[6:]
+    //}
 
-    return "(" + s_callme[:3] + ")" + s_callme[3:6] + "-" + s_callme[6:]
-
-  //}
+  
   /*
   callme := "("
  
