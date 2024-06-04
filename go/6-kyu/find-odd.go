@@ -1,3 +1,5 @@
+// 
+
 package kata
 
 func FindOdd(seq []int) int {
